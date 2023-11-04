@@ -13,12 +13,12 @@ import java.util.*;
 
 public class Event {
 
-    public String   eventName;
-    public String   eventTime;
-    public String   eventDescription;
-    public String   eventOrgName;
-    public String   eventLocation;
-    public Date     eventDate;
+    private String   eventName;
+    private String   eventTime;
+    private String   eventDescription;
+    private String   eventOrgName;
+    private String   eventLocation;
+    private Date     eventDate;
     public boolean  isOpen;
     public Attendees attendeeList = new Attendees(); 
 
@@ -63,26 +63,49 @@ public class Event {
                "Event is Open?:     " + isOpen + "\n";
     }
 
-    //SETTERS
+    //Getters and Setters
+    public String getEventName(){
+        return eventName;
+    }
 
     public void setEventName(String name){
         eventName = name;
+    }
+
+    public String getEventTime(){
+        return eventTime;
     }
 
     public void setEventTime(String time){
         eventTime = time;
     }
 
+    public String getEventDesc(){
+        return eventDescription;
+    }
+
     public void setEventDesc(String desc){
         eventDescription = desc;
+    }
+
+    public String getEventOrg(){
+        return eventOrgName;
     }
 
     public void setEventOrg(String org){
         eventOrgName = org;
     }
 
+    public String getEventLocation(){
+        return eventLocation;
+    }
+
     public void setEventLocation(String location){
         eventLocation = location;
+    }
+
+    public Date getEventDate(){
+        return eventDate;
     }
 
     public void setEventDate(Date date){
@@ -94,38 +117,11 @@ public class Event {
             eventDate = date;
     }
 
-    public void setEventStatus(boolean status){
-        isOpen = status;
-    }
-
-    //GETTERS
-
-    public String getEventName(){
-        return eventName;
-    }
-
-    public String getEventTime(){
-        return eventTime;
-    }
-
-    public String getEventDesc(){
-        return eventDescription;
-    }
-
-    public String getEventOrg(){
-        return eventOrgName;
-    }
-
-    public String getEventLocation(){
-        return eventLocation;
-    }
-
-    public Date getEventDate(){
-        return eventDate;
-    }
-
-    public boolean getEventStatus(){
+    public boolean isOpen(){
         return isOpen;
     }
 
+    public void setEventStatus(boolean status){
+        isOpen = status;
+    }
 }
