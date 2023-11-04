@@ -1,3 +1,4 @@
+package tests;
 import java.util.*;
 
 import classes.Event;
@@ -11,7 +12,7 @@ import classes.Event;
  * 
  */
 
-public class TestEventClass {
+public class TestEvent {
     public static void main(String[] args) throws Exception {
         
         //Creating new blank event
@@ -40,6 +41,5 @@ public class TestEventClass {
         System.out.println("ATTEMPTS TO SET DATE TO INVALID DATE:");
         event2.setEventDate(earlyDate);
         System.out.println("\n\n");
-
     }
 }
