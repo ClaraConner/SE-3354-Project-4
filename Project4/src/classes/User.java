@@ -1,5 +1,5 @@
 /*
- * This is the User class idk what to put in it
+ * AUTHOR: BEN WOWO (BNW200001)
  */
 package classes;
 

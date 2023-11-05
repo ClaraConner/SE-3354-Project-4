@@ -22,8 +22,7 @@ public class Attendees {
 
     }
 
-     public Attendees insert(boolean isOpen, Attendees list, String name) 
-    { 
+     public Attendees insert(boolean isOpen, Attendees list, String name) { 
         //if the event is closed then return original list
         if(!isOpen){
             System.out.println("Attendee " + name + " could not be added because the event is closed.");
@@ -55,8 +54,7 @@ public class Attendees {
     } 
 
     // Method to print the LinkedList. 
-    public void printList() 
-    { 
+    public void printList() { 
         Attendee currNode = head; 
     
         System.out.print("Event Attendees: "); 
