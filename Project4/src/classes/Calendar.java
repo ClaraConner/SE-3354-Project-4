@@ -40,20 +40,21 @@ public class Calendar {
     }
 
     public boolean removeOrgEvent(String orgID, Event event) {
-        if (!this.calendarMapping.containsKey(orgID)) {
-            return false;
+        List<Event> orgEvents = this.calendarMapping.get(orgID); 
+        
+        if (orgEvents != null && orgEvents.contains(event)) {
+            return orgEvents.remove(event);
         }
 
-        this.calendarMapping.get(orgID).remove(event);
-        return true;
+        return false;
     }
 
     public List<Event> getAllEvents() {
         List<Event> allEvents = new ArrayList<>();
 
-        this.calendarMapping.forEach((orgID, Event) -> {
-            allEvents.add((classes.Event) Event);
-        });
+        for (List<Event> eventsList : this.calendarMapping.values()) {
+            allEvents.addAll(eventsList);
+        }
 
         return allEvents;
     }
