@@ -6,7 +6,7 @@ import java.util.*;
 /*
  * 
  *  THIS FILE IS THE EVENT CLASS AND ALLOWS YOU TO CREATE AND EDIT AN EVENT
- *  AUTHOR: CLARA CONNER (CMC200010)
+ *  AUTHOR: ANUSHA BAJRACHARYA 
  * 
  * 
  */
@@ -19,7 +19,7 @@ public class Event {
     private String   eventOrgName;
     private String   eventLocation;
     private Date     eventDate;
-    public boolean  isOpen;
+    public boolean   isOpen;
     public Attendees attendeeList = new Attendees(); 
 
     public Event(String name, String time, String desc, String orgName,
@@ -112,6 +112,7 @@ public class Event {
         Date today = new Date();
         //Tests if the event date is before/after current date
         if(today.after(date))
+            //date is not valid
             System.out.println("The entered date is before the current date. Please enter a new one.");
         else
             eventDate = date;
