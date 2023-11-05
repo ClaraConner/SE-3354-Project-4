@@ -3,7 +3,7 @@ package classes;
 /*
  * 
  *  THIS FILE CREATES A LINKED LIST OF ATTENDEES FOR A GIVEN EVENT
- *  AUTHOR: NAME
+ *  AUTHOR: CLARA CONNER (CMC200010)
  * 
  * 
  */
@@ -28,28 +28,25 @@ public class Attendees {
             System.out.println("Attendee " + name + " could not be added because the event is closed.");
             return list;
         } 
-        // Create a new node with given data 
+        // Create a new node with given attendee name
         Attendee new_attendee = new Attendee(name); 
          
    
-        // If the Linked List is empty, 
-        // then make the new node as head 
+        // If the Linked List is empty
         if (list.head == null) { 
             list.head = new_attendee; 
         } 
         else { 
             // Else traverse till the last node 
-            // and insert the new_node there 
+            // and insert the new_attendee there 
             Attendee last = list.head; 
             while (last.next != null) { 
                 last = last.next; 
             } 
    
-            // Insert the new_node at last node 
             last.next = new_attendee; 
         } 
    
-        // Return the list by head 
         return list; 
     } 
 
@@ -59,12 +56,8 @@ public class Attendees {
     
         System.out.print("Event Attendees: "); 
     
-        // Traverse through the LinkedList 
         while (currNode != null) { 
-            // Print the data at current node 
             System.out.print("   " + currNode.attendeeName + ", "); 
-    
-            // Go to next node 
             currNode = currNode.next; 
         } 
     } 
@@ -96,7 +89,6 @@ public class Attendees {
             System.out.println(name + " not found on the attendee list");
         }
  
-        // return the List
         return list;
     }
 }

@@ -1,4 +1,3 @@
-package tests;
 import java.util.*;
 
 import classes.Event;
@@ -7,7 +6,7 @@ import classes.Event;
  * 
  *      THIS FILE TESTS THE EVENT CLASS ABILITY TO CREATE AND EDIT EVENTS
  *      AND ALSO TESTS THE DATE SET FUNCTION
- *      AUTHOR: NAME
+ *      AUTHOR: VIJAY KARTHIKEYA RAJA 
  * 
  * 
  */
