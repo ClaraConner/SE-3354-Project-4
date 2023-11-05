@@ -1,18 +1,39 @@
-## Getting Started
+# SE 3354.005 Project 4
+### Team 1 Activity 360
+<br/>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Members:
+Anusha Bajracharya,
+Clara Conner,
+Vijay Karthikeya Raja,
+Saidarsh Tukkadi,
+Lucas Wilson,
+Ben Wowo,
+Ji Min Yoon
 
-## Folder Structure
+<br/>
 
-The workspace contains two folders by default, where:
+### Project Description:
+This application would be used to track extracurriculars found at the University of Texas at Dallas
+through a calendar-style format, where the extracurriculars to be added could be edited by the user or
+an organization leader.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+<br/>
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Files Overview:
+Class Files: <br/>
+Calendar - The file establishes the Calendar class using a Map <br/>
+User - This file establishes the User class <br/>
+Event - This file establishes the Event class <br/>
+Attendees - This file establishes the Event Attendee List using a Linked List <br/>
+Test Files: <br/>
+Calendar Test - <br/>
+User Test - <br/>
+Event Test - Tests the creation and editing of an event. Also tests for valid dates. <br/>
+Attendee Test - Tests the creation, addition, and deletion of attendees. Tests for open events and valid attendees. <br/>
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Compilation Guide:
+Please ensure the files exist exactly as they were turned it, with the classes in the classes in the 'classes' folder and the tests in the 'tests' folder.  <br/>
+Execute a test file by selecting the file in your IDE and clicking 'run.' You will see the tests for the specific file running. <br/>
 
-## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
