@@ -1,5 +1,5 @@
 /*
- * AUTHOR: 
+ * AUTHOR: BEN WOWO
  * This class will contain multiple lists I guess for each organization
  * containing the dates of what events they will be having
  * 
