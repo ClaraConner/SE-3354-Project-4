@@ -27,7 +27,7 @@ User - This file establishes the User class <br/>
 Event - This file establishes the Event class <br/>
 Attendees - This file establishes the Event Attendee List using a Linked List <br/>
 Test Files: <br/>
-Calendar Test - <br/>
+Calendar Test - Tests the addition, deletion, and retrieval of events to and from organizations. <br/>
 User Test - <br/>
 Event Test - Tests the creation and editing of an event. Also tests for valid dates. <br/>
 Attendee Test - Tests the creation, addition, and deletion of attendees. Tests for open events and valid attendees. <br/>
