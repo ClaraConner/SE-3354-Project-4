@@ -4,6 +4,15 @@ import java.util.List;
 import classes.Event;
 import classes.User;
 
+/*
+ *      THIS FILE TESTS THE USER CLASS TO ENSURE
+ *      THAT EVENTS ARE NOT OVERWRITTEN
+ *      USERS HOLD A LIST OF RSVPED EVENTS
+ *      USER SETTINGS ARE PERSISTED
+ *      USER CAN SET THEIR STATUS TO ADMIN
+ *      AUTHOR: BEN WOWO (BNW200001)
+ */
+
 public class TestUser {
     public static void main(String[] args) {
         User user0 = new User();
