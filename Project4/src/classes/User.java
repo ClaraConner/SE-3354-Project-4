@@ -13,6 +13,7 @@ public class User {
     private String netID;
     private List<Event> RSVPedEvents;
     private List<String> organizations;
+    private boolean admin;
     
     public User() {
         this.firstName = "Default first name";
@@ -20,16 +21,20 @@ public class User {
         this.lastName = "Default last name";
         this.netID = "Default netID";
         this.RSVPedEvents = new ArrayList<>();
+        this.admin = false;
     }
 
+    
+
     public User(String firstName, String middleName, String lastName, String netID, List<Event> rSVPedEvents,
-            List<String> organizations) {
+            List<String> organizations, boolean admin) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.netID = netID;
         RSVPedEvents = rSVPedEvents;
         this.organizations = organizations;
+        this.admin = admin;
     }
 
     public String getFirstName() {
@@ -80,5 +85,19 @@ public class User {
         this.organizations = organizations;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }  
+
     
+
+    @Override
+    public String toString() {
+        return "User [firstName=" + firstName + ", middleName=" + middleName + ", lastName=" + lastName + ", netID="
+                + netID + ", RSVPedEvents=" + RSVPedEvents + ", organizations=" + organizations + "]";
+    }  
 }
