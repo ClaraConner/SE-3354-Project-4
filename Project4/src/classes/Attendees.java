@@ -41,6 +41,10 @@ public class Attendees {
             // and insert the new_attendee there 
             Attendee last = list.head; 
             while (last.next != null) { 
+                if (last.attendeeName == name){
+                    System.out.println("Attendee is already on the list.");
+                    return list;
+                }
                 last = last.next; 
             } 
    
