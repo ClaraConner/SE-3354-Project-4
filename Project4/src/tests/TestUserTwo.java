@@ -10,7 +10,7 @@ import classes.User;
  *      USERS HOLD A LIST OF RSVPED EVENTS
  *      USER SETTINGS ARE PERSISTED
  *      USER CAN SET THEIR STATUS TO ADMIN
- *      AUTHOR: BEN WOWO (BNW200001)
+ *      AUTHOR: ANUSHA BAJRACHARYA
  */
 
 public class TestUserTwo {

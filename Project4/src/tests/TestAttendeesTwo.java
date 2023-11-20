@@ -3,7 +3,7 @@ import classes.Event;
 /*
  * 
  *  THIS FILE TESTS THE ATTENDEE LIST FOR AN EVENT
- *  AUTHOR: LUCAS WILSON 
+ *  AUTHOR: CLARA CONNER
  * 
  * 
  */
